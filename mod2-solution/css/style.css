@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  margin: 0; /*Reset the margin added by the browser */
+  font-size: 1em; /*Reset font-size to 1em (just in case) */
+}
+h2{
+  margin: 0;
+}
+h1{
+  text-align: center;
+  font-size: 1.75em;
+}
+
+a:visited{
+  color: black;
+}
+a:link{
+  color:white;
+}
+a:hover{
+  color: green;
+}
+section {
+    position: relative;
+    color: white;
+    background-color: #4e4e4e; /*Gray(kind-of)*/
+    border: 1px solid black;
+    font-family: 'Muli', sans-serif;
+}
+section div.title {
+  position: absolute;
+  width: 170px;
+  top: 0;
+  right: 0;
+  text-align: center;
+  border: 1px solid black;
+}
+
+section h2{
+  font-size: 1.25em;
+  font-weight: 200;
+}
+section h2.reactos{
+  background-color:blue;
+}
+
+section h2.testing{
+  background-color:green;
+}
+section h2.downloading{
+  background-color:red;
+}
+
+section p{
+  margin: 35px 10px 20px;
+}
+.row{
+  padding: 10px;
+}
+.row > div{
+  padding: 0 10px 20px;
+}
+
+@media (min-width: 992px) {
+  .col-lg-4{
+    width: 33.33%;
+    float: left;
+  }
+
+}
+
+@media (min-width:768px) and (max-width:991px) {
+  .col-md-6{
+    width: 50%;
+    float: left;
+  }
+  .col-md-12{
+    width: 100%;
+    float: left;
+  }
+
+}
